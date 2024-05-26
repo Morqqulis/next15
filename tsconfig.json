@@ -1,26 +1,42 @@
 {
-  "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+   "compilerOptions": {
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "noEmit": true,
+      "esModuleInterop": true,
+      "module": "esnext",
+      "moduleResolution": "bundler",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "preserve",
+      "incremental": true,
+      "plugins": [
+         {
+            "name": "next"
+         }
+      ],
+      "paths": {
+         //   "@/*": ["./src/*"],
+         "@styles/*": ["./src/styles/*"],
+        //  "@components/*": ["./src/components/*"],
+         "@layout/*": ["./src/components/layout/*"],
+         "@sections/*": ["./src/components/sections/*"],
+         "@ui/*": ["./src/components/ui/*"],
+         "@common/*": ["./src/components/common/*"],
+         "@providers/*": ["./src/components/providers/*"],
+         "@libs/*": ["./src/libs/*"],
+         "@utils/*": ["./src/utils/*"],
+         "@types/*": ["./src/types/*"],
+         "@hooks/*": ["./src/hooks/*"],
+         "@services/*": ["./src/services/*"],
+         "@settings/*": ["./src/settings/*"],
+         "@constants/*": ["./src/constants/*"],
+         "@images/*": ["/images/*"]
+      },
+      "target": "ES2017"
+   },
+   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+   "exclude": ["node_modules"]
 }
